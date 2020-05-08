@@ -5,3 +5,7 @@ RUN apt-get update && apt-get install -y \
     vim \
     net-tools \
     openssh-client
+
+RUN useradd -ms /bin/bash jaceys
+USER jaceys
+WORKDIR /home/jaceys
