@@ -4,7 +4,8 @@ RUN apt-get update && apt-get install -y \
     man-db \
     vim \
     net-tools \
-    openssh-client
+    openssh-client \
+    cron
 
 RUN useradd -ms /bin/bash jaceys
 USER jaceys
